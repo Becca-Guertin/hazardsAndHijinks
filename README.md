@@ -1,4 +1,4 @@
-Portfolio of Artwork made for Dungeons and Dragons improv team: Hazards & Hijinks
+# Portfolio of Artwork made for Dungeons and Dragons improv team: Hazards & Hijinks
 All within React.JS
 
 All artwork by @sunflowerpopshop 
