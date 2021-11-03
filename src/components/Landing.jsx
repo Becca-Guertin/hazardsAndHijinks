@@ -1,20 +1,16 @@
 import React from "react";
 import { Grid } from "@material-ui/core";
-//import hh1 from ".src\assets\images\Simple_NoBg_h&h.png"
 import hh1 from "./../assets/images/Simple_NoBg_h&h.png";
 import hh2 from "./../assets/images/GalacticPeriwinkleHornsYellowB.png";
-import hh3 from "./../assets/images/Texture6_GalaxyBlue_h&h.png";
-import hh4 from "./../assets/images/TextureBanner7_h&h_colorWhite.png";
-import hh5 from "./../assets/images/AmpersandPeri_NoBg_h&h.png";
+import hh3 from "./../assets/images/AmpersandBlue_B2B_h&h.png"
+import hh4 from "./../assets/images/DarkerBlue_h&hF.png";
+import hh5 from "./../assets/images/Cutesie_h_h_F.png"
 import hh6 from "./../assets/images/AmpersandGrey_NoBg_h&h.png";
 import hh7 from "./../assets/images/TransparentBannerCrop_h&h.png";
 import hh8 from "./../assets/images/DragonHeadColorNoBG_h&h.png";
 import hh9 from "./../assets/images/DragonHeadColorNoBGFLIPPED_h&h.png";
 import hh10 from "./../assets/images/AmpersandRed_P3_h&h.png";
-// import galaxy from "./../assets/images/Galaxy.png";
-// import pink2 from "./../assets/images/pinkSprinkleFooter.png";
-// import purple from "./../assets/images/PurpleGalaxyBackGround (1).png";
-// import purpleVert from "./../assets/images/PurpleGalaxyBackGroundVert.png";
+import hh11 from "./../assets/images/SimpleGrey_NoBg_h&h.png"
 import purpleRainbowBG from "./../assets/images/BGRainBowPurps.png";
 import "./../assets/css/style.css";
 
@@ -46,51 +42,82 @@ const Landing = () => {
           >
             <Grid item>
               <img
-                //className="roundCorners2 shadow"
-                style={{ maxHeight: 400, maxWidth: 400 }}
+                style={{ maxHeight: 300, maxWidth: 300 }}
                 src={hh8}
                 alt="Hazards and Hijinks"
               />
             </Grid>
             <Grid item>
               <img
-                // className="roundCorners2 shadow"
-                style={{ maxHeight: 700, maxWidth: 900 }}
+                className="zoom"
+                style={{ maxHeight: 600, maxWidth: 800 }}
                 src={hh7}
                 alt="Hazards and Hijinks"
               />
             </Grid>
-            <Grid item>
-              <img
-                //className="roundCorners2 shadow"
-                style={{ maxHeight: 400, maxWidth: 400, paddingRight: 40 }}
-                src={hh9}
-                alt="Hazards and Hijinks"
-              />
-            </Grid>
-            <Grid item>
-              <img
-                className="roundCorners2 shadow"
-                style={{ maxHeight: 500, maxWidth: 500 }}
-                src={hh2}
-                alt="Hazards and Hijinks"
-              />
-            </Grid>
-            <Grid item>
-              <img
-                className="roundCorners2 shadow"
-                style={{ maxHeight: 500, maxWidth: 500 }}
-                src={hh6}
-                alt="Hazards and Hijinks"
-              />
-            </Grid>
-            <Grid item>
-              <img
-                className="roundCorners2 shadow"
-                style={{ maxHeight: 500, maxWidth: 500 }}
-                src={hh10}
-                alt="Hazards and Hijinks"
-              />
+            
+              <Grid item>
+                <img
+                  //className="roundCorners2 shadow"
+                  style={{ maxHeight: 300, maxWidth: 300, paddingRight: 40 }}
+                  src={hh9}
+                  alt="Hazards and Hijinks"
+                />
+              </Grid>
+              <Grid container justifyContent="center" direction="row" spacing={4}>
+              <Grid item>
+                <img
+                  className="roundCorners2 shadow zoom"
+                  style={{ maxHeight: 300, maxWidth: 300 }}
+                  src={hh3}
+                  alt="Hazards and Hijinks"
+                />
+              </Grid>
+              <Grid item>
+                <img
+                  className="roundCorners2 shadow zoom"
+                  style={{ maxHeight: 300, maxWidth: 300 }}
+                  src={hh4}
+                  alt="Hazards and Hijinks"
+                />
+              </Grid>
+              <Grid item>
+                <img
+                  className="roundCorners2 shadow zoom"
+                  style={{ maxHeight: 300, maxWidth: 300 }}
+                  src={hh5}
+                  alt="Hazards and Hijinks"
+                />
+              </Grid>
+              <Grid item>
+                <img
+                  className="roundCorners2 shadow zoom"
+                  style={{ maxHeight: 300, maxWidth: 300 }}
+                  src={hh10}
+                  alt="Hazards and Hijinks"
+                />
+              </Grid>
+              <Grid container
+              direction="row"
+              justifyContent="center"
+              spacing={4}>
+              <Grid item>
+                <img
+                  className="zoom"
+                  style={{ maxHeight: 400, maxWidth: 400 }}
+                  src={hh6}
+                  alt="Hazards and Hijinks"
+                />
+              </Grid>
+              <Grid item>
+                <img
+                  className="zoom"
+                  style={{ maxHeight: 500, maxWidth: 500 }}
+                  src={hh11}
+                  alt="Hazards and Hijinks"
+                />
+              </Grid>
+              </Grid>
             </Grid>
           </Grid>
         </div>
