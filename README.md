@@ -7,6 +7,6 @@ All artwork by @sunflowerpopshop
 
 Preview of Live Site:
 
-(./src/assets/images/GithubSitePreview.png)
+![](./src/assets/images/GithubSitePreview.png)
 
 Checkout the deployed AWS site here: https://dev.d1wehpq1tr8ee4.amplifyapp.com/ 
