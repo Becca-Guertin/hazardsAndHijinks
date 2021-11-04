@@ -1,6 +1,5 @@
 import React from "react";
 import { Grid } from "@material-ui/core";
-import hh1 from "./../assets/images/Simple_NoBg_h&h.png";
 import hh2 from "./../assets/images/GalacticPeriwinkleHornsYellowB.png";
 import hh3 from "./../assets/images/AmpersandBlue_B2B_h&h.png";
 import hh4 from "./../assets/images/DarkerBlue_h&hF.png";
@@ -17,13 +16,6 @@ import "./../assets/css/style.css";
 
 const Landing = () => {
   const history = useHistory();
-  const hijinksDetails = {
-    hh1,
-    hh2,
-    pink: "https://sunpopbucket.s3-us-west-1.amazonaws.com/images/pink.png",
-    purple:
-      "https://sunpopbucket.s3-us-west-1.amazonaws.com/images/PurpleGalaxyBackGroundHorizontal.png",
-  };
 
   const redirectToAmps = () => {
     history.push("/Ampersands");
@@ -38,7 +30,10 @@ const Landing = () => {
         <div
           className="container"
           style={{
-            padding: 100,
+            paddingLeft: 300,
+            paddingRight: 300,
+            paddingbottom: 300,
+            paddingTop: 100,
             backgroundImage: "url(" + purpleRainbowBG + ")",
           }}
         >
@@ -52,15 +47,15 @@ const Landing = () => {
             <Grid item>
               <img
                 className="zoom"
-                style={{ maxHeight: 200, maxWidth: 200 }}
+                style={{ maxHeight: 175, maxWidth: 175 }}
                 src={hh8}
                 alt="Hazards and Hijinks"
               />
             </Grid>
             <Grid item onClick={redirectToBans}>
               <img
-                className="zoom hoverHand"
-                style={{ maxHeight: 600, maxWidth: 800 }}
+                title="Click for more Banners"
+                className="zoom hoverHand logo"
                 src={hh7}
                 alt="Hazards and Hijinks"
               />
@@ -69,7 +64,7 @@ const Landing = () => {
             <Grid item>
               <img
                 className="zoom"
-                style={{ maxHeight: 200, maxWidth: 200 }}
+                style={{ maxHeight: 175, maxWidth: 175 }}
                 src={hh9}
                 alt="Hazards and Hijinks"
               />
@@ -99,7 +94,7 @@ const Landing = () => {
                   </div>
                 </div>
               </Grid>
-              <Grid item>
+              <Grid item onClick={redirectToAmps}>
                 <div className="card-box-hover-rise ">
                   <div className="box ">
                     <img
@@ -123,7 +118,7 @@ const Landing = () => {
                   </div>
                 </div>
               </Grid>
-              <Grid item>
+              <Grid item onClick={redirectToAmps}>
                 <div className="card-box-hover-rise ">
                   <div className="box ">
                     <img
@@ -147,7 +142,7 @@ const Landing = () => {
                   </div>
                 </div>
               </Grid>
-              <Grid item>
+              <Grid item onClick={redirectToAmps}>
                 <div className="card-box-hover-rise ">
                   <div className="box ">
                     <img
@@ -175,22 +170,58 @@ const Landing = () => {
                 container
                 direction="row"
                 justifyContent="center"
+                alignItems="center"
                 spacing={4}
               >
-                <Grid item>
-                  <img
-                    className="zoom"
-                    style={{ maxHeight: 400, maxWidth: 400 }}
-                    src={hh6}
-                    alt="Hazards and Hijinks"
-                  />
+                <Grid item className="zoom">
+                  <div className="card-box-hover-rise ">
+                    <div className="box">
+                      <img
+                        style={{
+                          height: "auto",
+                          width: "auto",
+                          maxHeight: 500,
+                          maxWidth: 500,
+                        }}
+                        src={hh6}
+                        alt="Hazards and Hijinks"
+                      />
+                      <div className="middle hoverHand">
+                        <div className="text4">click me</div>
+                      </div>
+                    </div>
+                  </div>
                 </Grid>
                 <Grid item className="zoom">
                   <div className="card-box-hover-rise ">
                     <div className="box">
                       <img
-                        //className="zoom"
-                        style={{ maxHeight: 500, maxWidth: 500 }}
+                        style={{
+                          height: "auto",
+                          width: "auto",
+                          maxHeight: 400,
+                          maxWidth: 400,
+                        }}
+                        src={hh2}
+                        alt="Hazards and Hijinks"
+                        className="roundCorners2"
+                      />
+                      <div className="middle hoverHand">
+                        <div className="text5">click me</div>
+                      </div>
+                    </div>
+                  </div>
+                </Grid>
+                <Grid item className="zoom">
+                  <div className="card-box-hover-rise ">
+                    <div className="box">
+                      <img
+                        style={{
+                          height: "auto",
+                          width: "auto",
+                          maxHeight: 500,
+                          maxWidth: 500,
+                        }}
                         src={hh11}
                         alt="Hazards and Hijinks"
                       />
