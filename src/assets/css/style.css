@@ -55,6 +55,13 @@
   padding: 16px 32px;
 }
 
+.text4 {
+    color:#9830fa;
+    font-weight: bolder;
+    font-size: 80px;
+    font-family: "Brush Script MT";
+}
+
 .sliderimg {
   justify-content: center;
   height: auto;
