@@ -16,8 +16,8 @@ class App extends Component {
     return (
       <BrowserRouter>
         <React.Fragment>
-          <Route path="/Ampersands" exact={true} component={Ampersands}></Route>
-          <Route path="/Banners" exact={true} component={Banners}></Route>
+          <Route path="/ampersands" exact={true} component={Ampersands}></Route>
+          <Route path="/banners" exact={true} component={Banners}></Route>
           <Route path="/" exact={true} component={Landing}></Route>
         </React.Fragment>
       </BrowserRouter>

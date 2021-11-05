@@ -21,10 +21,10 @@ const Landing = () => {
   const history = useHistory();
 
   const redirectToAmps = () => {
-    history.push("/Ampersands");
+    history.push("/ampersands");
   };
   const redirectToBans = () => {
-    history.push("/Banners");
+    history.push("/banners");
   };
 
   return (
@@ -196,24 +196,26 @@ const Landing = () => {
                   </div>
                 </Grid>
                 <Grid item className="zoom">
-                  <div className="card-box-hover-rise ">
-                    <div className="box">
-                      <img
-                        style={{
-                          height: "auto",
-                          width: "auto",
-                          maxHeight: 250,
-                          maxWidth: 250,
-                        }}
-                        src={images.hh2}
-                        alt="Hazards and Hijinks"
-                        className="roundCorners2"
-                      />
-                      <div className="middle hoverHand">
-                        <div className="text5">click me</div>
+                  <a href="https://sunpopshop.com">
+                    <div className="card-box-hover-rise ">
+                      <div className="box">
+                        <img
+                          style={{
+                            height: "auto",
+                            width: "auto",
+                            maxHeight: 250,
+                            maxWidth: 250,
+                          }}
+                          src={images.hh2}
+                          alt="Hazards and Hijinks"
+                          className="roundCorners2"
+                        />
+                        <div className="middle hoverHand">
+                          <div className="text6">click to see more art by @sunpopshop</div>
+                        </div>
                       </div>
                     </div>
-                  </div>
+                  </a>
                 </Grid>
                 <Grid item className="zoom">
                   <div className="card-box-hover-rise ">

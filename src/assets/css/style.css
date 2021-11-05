@@ -65,7 +65,14 @@
 .text5 {
     color:white;
     font-weight: bolder;
-    font-size: 80px;
+    font-size: 60px;
+    font-family: "Brush Script MT";
+  }
+  .text6 {
+    background-color: #d3a4ff;
+    color: white;
+    font-weight: bold;
+    font-size: 40px;
     font-family: "Brush Script MT";
   }
 
