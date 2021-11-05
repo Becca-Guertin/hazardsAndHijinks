@@ -1,22 +1,30 @@
 import React from "react";
 import { Grid } from "@material-ui/core";
 import { Link } from "react-router-dom";
-import banner1 from "./../assets/images/Texture6_Transparent_h&h.png";
-import banner3 from "./../assets/images/Texture4_Transparent_h&h.png";
+// import banner1 from "./../assets/images/Texture6_Transparent_h&h.png";
+// import banner3 from "./../assets/images/Texture4_Transparent_h&h.png";
 // import banner2 from "./../assets/images/TextureBanner7_h&h_colorWhite.png";
 // import banner4 from "./../assets/images/Texture6_GalaxyPink_h&h.png";
 // import banner5 from "./../assets/images/Texture6_BlueA_h&h.png";
-import logo from "./../assets/images/DragonHeadColorNoBG_h&h.png";
-import purpleRainbowBG from "./../assets/images/BGRainBowPurps.png";
+//import logo from "./../assets/images/DragonHeadColorNoBG_h&h.png";
+//import purpleRainbowBG from "./../assets/images/BGRainBowPurps.png";
 import "./../assets/css/style.css";
 
 const Banners = () => {
+  const banners = {
+    banner5:
+      "https://sunpopbucket.s3.us-west-1.amazonaws.com/images/Texture6_BlueA_h%26h.png",
+    banner4:
+      "https://sunpopbucket.s3.us-west-1.amazonaws.com/images/Texture6_GalaxyPink_h%26h.png",
+    banner2:
+      "https://sunpopbucket.s3.us-west-1.amazonaws.com/images/TextureBanner7_h%26h_colorWhite.png",
+  };
 
-    const banners = {
-        banner5: "https://sunpopbucket.s3.us-west-1.amazonaws.com/images/Texture6_BlueA_h%26h.png",
-        banner4: "https://sunpopbucket.s3.us-west-1.amazonaws.com/images/Texture6_GalaxyPink_h%26h.png",
-        banner2: "https://sunpopbucket.s3.us-west-1.amazonaws.com/images/TextureBanner7_h%26h_colorWhite.png",
-    };
+  const images = {
+    logo: "https://sunpopbucket.s3.us-west-1.amazonaws.com/images/DragonHeadColorNoBG_h%26h_NoRainbow.png",
+    purpleRainbowBG:
+      "https://sunpopbucket.s3.us-west-1.amazonaws.com/images/BGRainBowPurps.png",
+  };
 
   return (
     <React.Fragment>
@@ -25,7 +33,7 @@ const Banners = () => {
           className="container"
           style={{
             padding: 100,
-            backgroundImage: "url(" + purpleRainbowBG + ")",
+            backgroundImage: "url(" + images.purpleRainbowBG + ")",
           }}
         >
           <Grid
@@ -40,10 +48,10 @@ const Banners = () => {
                 <i className="bg-white">
                   <img
                     alt="SunPopShop"
-                    src={logo}
+                    src={images.logo}
                     style={{
-                      height: 100,
-                      width: 100,
+                      height: 150,
+                      width: 150,
                       justifyContent: "center",
                     }}
                   />
