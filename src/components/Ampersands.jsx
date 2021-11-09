@@ -15,7 +15,9 @@ const Ampersands = () => {
     hh4: "https://sunpopbucket.s3.us-west-1.amazonaws.com/images/DarkerBlue_h%26hF.png",
     hh5: "https://sunpopbucket.s3.us-west-1.amazonaws.com/images/Cutesie_h_h_F.png",
     hh10: "https://sunpopbucket.s3.us-west-1.amazonaws.com/images/AmpersandRed_P3_h%26h.png",
-    logo: "https://sunpopbucket.s3.us-west-1.amazonaws.com/images/DragonHeadColorNoBG_h%26h_NoRainbow.png",
+    logo: "https://sunpopbucket.s3.us-west-1.amazonaws.com/images/DragonHeadColorNoBG_h%26h_%26h_NoRainbow.png",
+    logo2:
+      "https://sunpopbucket.s3.us-west-1.amazonaws.com/images/Back_dragon_h2site.png",
     purpleRainbowBG:
       "https://sunpopbucket.s3.us-west-1.amazonaws.com/images/BGRainBowPurps.png",
   };
@@ -41,8 +43,9 @@ const Ampersands = () => {
               <Link to="/" title="Back to Home">
                 <i className="bg-white">
                   <img
+                  className="logo2"
                     alt="SunPopShop"
-                    src={images.logo}
+                    src={images.logo2}
                     style={{
                       height: 150,
                       width: 150,

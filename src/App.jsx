@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { Route, BrowserRouter } from "react-router-dom";
 import Ampersands from "./components/Ampersands";
 import Banners from "./components/Banners";
+import GreyScales from "./components/GreyScales";
 import Landing from "./components/Landing";
 import "./App.css";
 
@@ -18,6 +19,7 @@ class App extends Component {
         <React.Fragment>
           <Route path="/ampersands" exact={true} component={Ampersands}></Route>
           <Route path="/banners" exact={true} component={Banners}></Route>
+          <Route path="/greyscales" exact={true} component={GreyScales}></Route>
           <Route path="/" exact={true} component={Landing}></Route>
         </React.Fragment>
       </BrowserRouter>

@@ -63,19 +63,18 @@
 }
 
 .text5 {
-    color:white;
-    font-weight: bolder;
-    font-size: 60px;
-    font-family: "Brush Script MT";
-  }
-  .text6 {
-    background-color: #d3a4ff;
-    color: white;
-    font-weight: bold;
-    font-size: 40px;
-    font-family: "Brush Script MT";
-  }
-
+  color: white;
+  font-weight: bolder;
+  font-size: 60px;
+  font-family: "Brush Script MT";
+}
+.text6 {
+  background-color: #d3a4ff;
+  color: white;
+  font-weight: bold;
+  font-size: 40px;
+  font-family: "Brush Script MT";
+}
 
 .sliderimg {
   justify-content: center;
@@ -120,6 +119,13 @@
 .logo {
   max-width: 600px;
   max-height: 400px;
+}
+
+.logo2:hover {
+  transform: rotate(-25deg);
+  /* transform: rotate(90deg); */
+  /* rotate: 0.25turn;
+  rotate: 1.57rad; */
 }
 
 @media screen and (max-width: 726px) {

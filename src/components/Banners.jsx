@@ -22,6 +22,8 @@ const Banners = () => {
 
   const images = {
     logo: "https://sunpopbucket.s3.us-west-1.amazonaws.com/images/DragonHeadColorNoBG_h%26h_NoRainbow.png",
+    logo2:
+      "https://sunpopbucket.s3.us-west-1.amazonaws.com/images/Back_dragon_h2site.png",
     purpleRainbowBG:
       "https://sunpopbucket.s3.us-west-1.amazonaws.com/images/BGRainBowPurps.png",
   };
@@ -43,12 +45,13 @@ const Banners = () => {
             alignItems="center"
           >
             <Grid item></Grid>
-            <Grid item xs={6}>
-              <Link to="/" title="Back to Home">
+            <Grid item xs={6} >
+              <Link   to="/" title="Back to Home">
                 <i className="bg-white">
                   <img
+                   className="logo2"
                     alt="SunPopShop"
-                    src={images.logo}
+                    src={images.logo2}
                     style={{
                       height: 150,
                       width: 150,

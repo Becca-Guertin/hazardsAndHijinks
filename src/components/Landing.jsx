@@ -26,6 +26,9 @@ const Landing = () => {
   const redirectToBans = () => {
     history.push("/banners");
   };
+  const redirectToGreys = () => {
+    history.push("/greyscales");
+  };
 
   return (
     <React.Fragment>
@@ -190,7 +193,9 @@ const Landing = () => {
                         alt="Hazards and Hijinks"
                       />
                       <div className="middle hoverHand">
-                        <div className="text4">click me</div>
+                        <div className="text4" onClick={redirectToGreys}>
+                          click me
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -211,7 +216,9 @@ const Landing = () => {
                           className="roundCorners2"
                         />
                         <div className="middle hoverHand">
-                          <div className="text6">click to see more art by @sunpopshop</div>
+                          <div className="text6">
+                            click to see more art by @sunpopshop
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -231,7 +238,9 @@ const Landing = () => {
                         alt="Hazards and Hijinks"
                       />
                       <div className="middle hoverHand">
-                        <div className="text4">click me</div>
+                        <div className="text4" onClick={redirectToGreys}>
+                          click me
+                        </div>
                       </div>
                     </div>
                   </div>
