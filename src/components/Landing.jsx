@@ -15,6 +15,8 @@ const Landing = () => {
     hh9: "https://sunpopbucket.s3.us-west-1.amazonaws.com/images/DragonHeadColorNoBGFLIPPED_h%26h.png",
     hh10: "https://sunpopbucket.s3.us-west-1.amazonaws.com/images/AmpersandRed_P3_h%26h.png",
     hh11: "https://sunpopbucket.s3.us-west-1.amazonaws.com/images/SimpleGrey_NoBg_h%26h.png",
+    banner:
+      "https://sunpopbucket.s3.us-west-1.amazonaws.com/images/HazardsHijinksAdventurelandBannerNoBG3.png",
     purpleRainbowBG:
       "https://sunpopbucket.s3.us-west-1.amazonaws.com/images/BGRainBowPurps.png",
   };
@@ -50,6 +52,11 @@ const Landing = () => {
             justifyContent="center"
             spacing={4}
           >
+            <Grid item></Grid>
+            <Grid item>
+              <img src={images.banner}></img>
+            </Grid>
+            <Grid item></Grid>
             <Grid item>
               <img
                 className="zoom"
@@ -245,6 +252,9 @@ const Landing = () => {
                     </div>
                   </div>
                 </Grid>
+                <Grid item></Grid>
+                <Grid item></Grid>
+                <Grid item></Grid>
               </Grid>
             </Grid>
           </Grid>
