@@ -12,7 +12,6 @@ const GreyScales = () => {
     hh7: "https://sunpopbucket.s3.us-west-1.amazonaws.com/images/GreyscaleBanner2_h%26h.png",
     hh8: "https://sunpopbucket.s3.us-west-1.amazonaws.com/images/GreyscaleBanner2NoBG_h%26h2.png",
     hh9: "https://sunpopbucket.s3.us-west-1.amazonaws.com/images/GreyscaleBanner_h%26h.png",
-    // logo: "https://sunpopbucket.s3.us-west-1.amazonaws.com/images/DragonHeadColorNoBG_h%26h_NoRainbow.png",
     logo: "https://sunpopbucket.s3.us-west-1.amazonaws.com/images/Back_dragon_h2site.png",
     purpleRainbowBG:
       "https://sunpopbucket.s3.us-west-1.amazonaws.com/images/BGRainBowPurps.png",
@@ -118,7 +117,7 @@ const GreyScales = () => {
                 <img
                   src={images.hh4}
                   className="zoom roundCorners2"
-                  style={{ maxHeight: 600, maxWidth: 700 }}
+                  style={{ maxHeight: 400, maxWidth: 500 }}
                 ></img>
               </Grid>
               <Grid item xs={4}></Grid>
