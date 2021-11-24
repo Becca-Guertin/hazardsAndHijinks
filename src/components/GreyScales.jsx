@@ -68,7 +68,7 @@ const GreyScales = () => {
               <img
                 className="zoom roundCorners2"
                 src={images.hh3}
-                style={{ maxHeight: 300, maxWidth: 300 }}
+                style={{ maxHeight: 250, maxWidth: 250 }}
                 alt="Hazards and Hijinks Greysale V1"
               ></img>
             </Grid>
@@ -76,7 +76,7 @@ const GreyScales = () => {
               <img
                 className="zoom roundCorners2"
                 src={images.hh8}
-                style={{ maxHeight: 400, maxWidth: 500 }}
+                style={{ maxHeight: 200, maxWidth: 300 }}
                 alt="Hazards and Hijinks Greysale V2"
               ></img>
             </Grid>
@@ -84,7 +84,7 @@ const GreyScales = () => {
               <img
                 className="zoom roundCorners2"
                 src={images.hh5}
-                style={{ maxHeight: 300, maxWidth: 300 }}
+                style={{ maxHeight: 250, maxWidth: 250 }}
                 alt="Hazards and Hijinks Greysale V3"
               ></img>
             </Grid>
@@ -93,21 +93,21 @@ const GreyScales = () => {
                 <img
                   className="zoom roundCorners2"
                   src={images.hh7}
-                  style={{ maxHeight: 400, maxWidth: 500 }}
+                  style={{ maxHeight: 250, maxWidth: 300 }}
                 ></img>
               </Grid>
               <Grid item>
                 <img
                   className="zoom roundCorners2"
                   src={images.hh6}
-                  style={{ maxHeight: 400, maxWidth: 500 }}
+                  style={{ maxHeight: 250, maxWidth: 300 }}
                 ></img>
               </Grid>
               <Grid item>
                 <img
                   className="zoom roundCorners2"
                   src={images.hh9}
-                  style={{ maxHeight: 400, maxWidth: 500 }}
+                  style={{ maxHeight: 250, maxWidth: 300 }}
                 ></img>
               </Grid>
             </Grid>
@@ -117,7 +117,7 @@ const GreyScales = () => {
                 <img
                   src={images.hh4}
                   className="zoom roundCorners2"
-                  style={{ maxHeight: 400, maxWidth: 500 }}
+                  style={{ maxHeight: 250, maxWidth: 300 }}
                 ></img>
               </Grid>
               <Grid item xs={4}></Grid>
