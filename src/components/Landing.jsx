@@ -41,7 +41,7 @@ const Landing = () => {
             paddingLeft: 250,
             paddingRight: 250,
             paddingbottom: 250,
-            paddingTop: 100,
+            paddingTop: 20,
             backgroundImage: "url(" + images.purpleRainbowBG + ")",
           }}
         >
@@ -54,9 +54,20 @@ const Landing = () => {
           >
             <Grid item></Grid>
             <Grid item>
-              <img src={images.banner}></img>
+                <img
+                  className="landingBanner"
+                  src={images.banner}
+                ></img>
             </Grid>
             <Grid item></Grid>
+          </Grid>
+          <Grid
+            container
+            direction="row"
+            alignItems="center"
+            justifyContent="center"
+            spacing={4}
+          >
             <Grid item>
               <img
                 className="zoom"
