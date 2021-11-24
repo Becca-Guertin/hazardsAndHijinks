@@ -128,6 +128,28 @@
   rotate: 1.57rad; */
 }
 
+.landingBanner {
+  max-width: 1100px;
+  max-height: 400px;
+}
+
+@media screen and (max-width: 1220px) {
+  .landingBanner {
+    max-width: 700px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .landingBanner {
+    max-width: 500px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .landingBanner {
+    max-width: 350px;
+  }
+}
+
 @media screen and (max-width: 726px) {
   .logo {
     max-width: 500px;

@@ -54,7 +54,7 @@ const Landing = () => {
           >
             <Grid item></Grid>
             <Grid item>
-              <img src={images.banner}></img>
+              <img className="landingBanner" src={images.banner}></img>
             </Grid>
             <Grid item></Grid>
             <Grid item>
