@@ -57,6 +57,14 @@ const Landing = () => {
               <img className="landingBanner" src={images.banner}></img>
             </Grid>
             <Grid item></Grid>
+          </Grid>
+          <Grid
+            container
+            direction="row"
+            alignItems="center"
+            justifyContent="center"
+            spacing={4}
+          >
             <Grid item>
               <img
                 className="zoom"
