@@ -1,25 +1,46 @@
 import React from "react";
 import { Grid } from "@material-ui/core";
 import { useHistory } from "react-router-dom";
+import FontSlider from "./FontSlider";
+import LandAmpTemp from "./LandAmpTemp";
 import "./../assets/css/style.css";
 
 const Landing = () => {
   const images = {
+    amps: [
+      {
+        id: 1,
+        imgUrl:
+          "https://sunpopbucket.s3.us-west-1.amazonaws.com/images/AmpersandBlue_B2B_h%26h.png",
+      },
+      {
+        id: 2,
+        imgUrl:
+          "https://sunpopbucket.s3.us-west-1.amazonaws.com/images/DarkerBlue_h%26hF.png",
+      },
+      {
+        id: 3,
+        imgUrl:
+          "https://sunpopbucket.s3.us-west-1.amazonaws.com/images/Cutesie_h_h_F.png",
+      },
+      {
+        id: 4,
+        imgUrl:
+          "https://sunpopbucket.s3.us-west-1.amazonaws.com/images/AmpersandRed_P3_h%26h.png",
+      },
+    ],
     hh2: "https://sunpopbucket.s3.us-west-1.amazonaws.com/images/GalacticPeriwinkleHornsYellowB.png",
-    hh3: "https://sunpopbucket.s3.us-west-1.amazonaws.com/images/AmpersandBlue_B2B_h%26h.png",
-    hh4: "https://sunpopbucket.s3.us-west-1.amazonaws.com/images/DarkerBlue_h%26hF.png",
-    hh5: "https://sunpopbucket.s3.us-west-1.amazonaws.com/images/Cutesie_h_h_F.png",
     hh6: "https://sunpopbucket.s3.us-west-1.amazonaws.com/images/AmpersandGrey_NoBg_h%26h.png",
     hh7: "https://sunpopbucket.s3.us-west-1.amazonaws.com/images/TransparentBannerCrop_h%26h.png",
     hh8: "https://sunpopbucket.s3.us-west-1.amazonaws.com/images/DragonHeadColorNoBG_h%26h.png",
     hh9: "https://sunpopbucket.s3.us-west-1.amazonaws.com/images/DragonHeadColorNoBGFLIPPED_h%26h.png",
-    hh10: "https://sunpopbucket.s3.us-west-1.amazonaws.com/images/AmpersandRed_P3_h%26h.png",
     hh11: "https://sunpopbucket.s3.us-west-1.amazonaws.com/images/SimpleGrey_NoBg_h%26h.png",
     banner:
       "https://sunpopbucket.s3.us-west-1.amazonaws.com/images/HazardsHijinksAdventurelandBannerNoBG3.png",
     purpleRainbowBG:
       "https://sunpopbucket.s3.us-west-1.amazonaws.com/images/BGRainBowPurps.png",
   };
+
   const history = useHistory();
 
   const redirectToAmps = () => {
@@ -30,6 +51,17 @@ const Landing = () => {
   };
   const redirectToGreys = () => {
     history.push("/greyscales");
+  };
+
+  const mapLandAmps = (amp) => {
+    return (
+      <LandAmpTemp
+        key={`LandingAmps-${amp.id}`}
+        amp={amp}
+        handleClick={redirectToAmps}
+        imgUrl={images.amps.imgUrl}
+      />
+    );
   };
 
   return (
@@ -91,98 +123,77 @@ const Landing = () => {
               />
             </Grid>
             <Grid container justifyContent="center" direction="row" spacing={4}>
-              <Grid item onClick={redirectToAmps}>
+              {images.amps.map(mapLandAmps)}
+            </Grid>
+            <Grid
+              container
+              direction="row"
+              justifyContent="center"
+              alignItems="center"
+              spacing={4}
+            >
+              <Grid item className="zoom">
                 <div className="card-box-hover-rise ">
-                  <div className="box ">
+                  <div className="box">
                     <img
                       style={{
                         height: "auto",
                         width: "auto",
-                        maxHeight: 200,
-                        maxWidth: 200,
+                        maxHeight: 300,
+                        maxWidth: 300,
                       }}
-                      src={images.hh3}
-                      className="image roundCorners2 shadow"
+                      src={images.hh6}
                       alt="Hazards and Hijinks"
-                    ></img>
-                    <h3
-                      style={{ fontFamily: "Brush Script MT" }}
-                      className="text-black"
-                    ></h3>
+                    />
                     <div className="middle hoverHand">
-                      <div className="text">Check Out More!</div>
+                      <div className="text4" onClick={redirectToGreys}>
+                        click me
+                      </div>
                     </div>
                   </div>
                 </div>
               </Grid>
-              <Grid item onClick={redirectToAmps}>
-                <div className="card-box-hover-rise ">
-                  <div className="box ">
-                    <img
-                      style={{
-                        height: "auto",
-                        width: "auto",
-                        maxHeight: 200,
-                        maxWidth: 200,
-                      }}
-                      src={images.hh4}
-                      className="image roundCorners2 shadow"
-                      alt="Hazards and Hijinks"
-                    ></img>
-                    <h3
-                      style={{ fontFamily: "Brush Script MT" }}
-                      className="text-black"
-                    ></h3>
-                    <div className="middle hoverHand">
-                      <div className="text">Check Out More!</div>
+              <Grid item className="zoom">
+                <a href="https://sunpopshop.com">
+                  <div className="card-box-hover-rise ">
+                    <div className="box">
+                      <img
+                        style={{
+                          height: "auto",
+                          width: "auto",
+                          maxHeight: 250,
+                          maxWidth: 250,
+                        }}
+                        src={images.hh2}
+                        alt="Hazards and Hijinks"
+                        className="roundCorners2"
+                      />
+                      <div className="middle hoverHand">
+                        <div className="text6">
+                          click to see more art by @sunpopshop
+                        </div>
+                      </div>
                     </div>
                   </div>
-                </div>
+                </a>
               </Grid>
-              <Grid item onClick={redirectToAmps}>
+              <Grid item className="zoom">
                 <div className="card-box-hover-rise ">
-                  <div className="box ">
+                  <div className="box">
                     <img
                       style={{
                         height: "auto",
                         width: "auto",
-                        maxHeight: 200,
-                        maxWidth: 200,
+                        maxHeight: 300,
+                        maxWidth: 300,
                       }}
-                      src={images.hh5}
-                      className="image roundCorners2 shadow"
+                      src={images.hh11}
                       alt="Hazards and Hijinks"
-                    ></img>
-                    <h3
-                      style={{ fontFamily: "Brush Script MT" }}
-                      className="text-black"
-                    ></h3>
+                    />
                     <div className="middle hoverHand">
-                      <div className="text">Check Out More!</div>
-                    </div>
-                  </div>
-                </div>
-              </Grid>
-              <Grid item onClick={redirectToAmps}>
-                <div className="card-box-hover-rise ">
-                  <div className="box ">
-                    <img
-                      style={{
-                        height: "auto",
-                        width: "auto",
-                        maxHeight: 200,
-                        maxWidth: 200,
-                      }}
-                      src={images.hh10}
-                      className="image roundCorners2 shadow"
-                      alt="Hazards and Hijinks"
-                    ></img>
-                    <h3
-                      style={{ fontFamily: "Brush Script MT" }}
-                      className="text-black"
-                    ></h3>
-                    <div className="middle hoverHand">
-                      <div className="text">Check Out More!</div>
+                      <div className="text4" onClick={redirectToGreys}>
+                        click me
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -190,82 +201,19 @@ const Landing = () => {
               <Grid
                 container
                 direction="row"
+                spacing={2}
                 justifyContent="center"
                 alignItems="center"
-                spacing={4}
               >
-                <Grid item className="zoom">
-                  <div className="card-box-hover-rise ">
-                    <div className="box">
-                      <img
-                        style={{
-                          height: "auto",
-                          width: "auto",
-                          maxHeight: 300,
-                          maxWidth: 300,
-                        }}
-                        src={images.hh6}
-                        alt="Hazards and Hijinks"
-                      />
-                      <div className="middle hoverHand">
-                        <div className="text4" onClick={redirectToGreys}>
-                          click me
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+                <Grid item xs={4}></Grid>
+                <Grid item xs={4}>
+                  <FontSlider />
                 </Grid>
-                <Grid item className="zoom">
-                  <a href="https://sunpopshop.com">
-                    <div className="card-box-hover-rise ">
-                      <div className="box">
-                        <img
-                          style={{
-                            height: "auto",
-                            width: "auto",
-                            maxHeight: 250,
-                            maxWidth: 250,
-                          }}
-                          src={images.hh2}
-                          alt="Hazards and Hijinks"
-                          className="roundCorners2"
-                        />
-                        <div className="middle hoverHand">
-                          <div className="text6">
-                            click to see more art by @sunpopshop
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </a>
-                </Grid>
-                <Grid item className="zoom">
-                  <div className="card-box-hover-rise ">
-                    <div className="box">
-                      <img
-                        style={{
-                          height: "auto",
-                          width: "auto",
-                          maxHeight: 300,
-                          maxWidth: 300,
-                        }}
-                        src={images.hh11}
-                        alt="Hazards and Hijinks"
-                      />
-                      <div className="middle hoverHand">
-                        <div className="text4" onClick={redirectToGreys}>
-                          click me
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </Grid>
-                <Grid item></Grid>
-                <Grid item></Grid>
-                <Grid item></Grid>
+                <Grid item xs={4}></Grid>
               </Grid>
             </Grid>
           </Grid>
+          {/* </Grid> */}
         </div>
       </div>
     </React.Fragment>
