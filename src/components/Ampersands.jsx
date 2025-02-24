@@ -1,12 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { Grid } from "@material-ui/core";
-// import hh3 from "./../assets/images/AmpersandBlue_B2B_h&h.png";
-// import hh4 from "./../assets/images/DarkerBlue_h&hF.png";
-// import hh5 from "./../assets/images/Cutesie_h_h_F.png";
-// import hh10 from "./../assets/images/AmpersandRed_P3_h&h.png";
-// import logo from "./../assets/images/DragonHeadColorNoBG_h&h.png";
-// import purpleRainbowBG from "./../assets/images/BGRainBowPurps.png";
 import "./../assets/css/style.css";
 
 const Ampersands = () => {
@@ -44,7 +38,7 @@ const Ampersands = () => {
                 <i className="bg-white">
                   <img
                   className="logo2"
-                    alt="SunPopShop"
+                    alt=""
                     src={images.logo2}
                     style={{
                       height: 150,

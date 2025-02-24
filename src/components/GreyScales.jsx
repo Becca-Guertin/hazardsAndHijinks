@@ -94,6 +94,7 @@ const GreyScales = () => {
                   className="zoom roundCorners2"
                   src={images.hh7}
                   style={{ maxHeight: 250, maxWidth: 300 }}
+                  alt=""
                 ></img>
               </Grid>
               <Grid item>
@@ -101,6 +102,7 @@ const GreyScales = () => {
                   className="zoom roundCorners2"
                   src={images.hh6}
                   style={{ maxHeight: 250, maxWidth: 300 }}
+                  alt=""
                 ></img>
               </Grid>
               <Grid item>
@@ -108,6 +110,7 @@ const GreyScales = () => {
                   className="zoom roundCorners2"
                   src={images.hh9}
                   style={{ maxHeight: 250, maxWidth: 300 }}
+                  alt=""
                 ></img>
               </Grid>
             </Grid>
@@ -118,6 +121,7 @@ const GreyScales = () => {
                   src={images.hh4}
                   className="zoom roundCorners2"
                   style={{ maxHeight: 250, maxWidth: 300 }}
+                  alt=""
                 ></img>
               </Grid>
               <Grid item xs={4}></Grid>

@@ -128,9 +128,17 @@
   rotate: 1.57rad; */
 }
 
+.bannerFloat {
+  /* position: fixed; */
+  /* padding: 40px; */
+  /* position: sticky; */
+}
+
 .landingBanner {
   max-width: 1100px;
   max-height: 400px;
+  /* float:initial; */
+  /* position: fixed; */
 }
 
 @media screen and (max-width: 1220px) {

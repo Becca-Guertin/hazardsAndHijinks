@@ -84,9 +84,11 @@ const Landing = () => {
             justifyContent="center"
             spacing={4}
           >
-            <Grid item></Grid>
-            <Grid item>
-              <img className="landingBanner" src={images.banner}></img>
+            <Grid item ></Grid>
+            <Grid item 
+            className="bannerFloat"
+            >
+              <img className="landingBanner" src={images.banner} alt="landing banner"></img>
             </Grid>
             <Grid item></Grid>
           </Grid>
@@ -113,7 +115,6 @@ const Landing = () => {
                 alt="Hazards and Hijinks"
               />
             </Grid>
-
             <Grid item>
               <img
                 className="zoom"
@@ -154,7 +155,6 @@ const Landing = () => {
                 </div>
               </Grid>
               <Grid item className="zoom">
-                <a href="https://sunpopshop.com">
                   <div className="card-box-hover-rise ">
                     <div className="box">
                       <img
@@ -169,13 +169,9 @@ const Landing = () => {
                         className="roundCorners2"
                       />
                       <div className="middle hoverHand">
-                        <div className="text6">
-                          click to see more art by @sunpopshop
-                        </div>
                       </div>
                     </div>
                   </div>
-                </a>
               </Grid>
               <Grid item className="zoom">
                 <div className="card-box-hover-rise ">
@@ -213,7 +209,6 @@ const Landing = () => {
               </Grid>
             </Grid>
           </Grid>
-          {/* </Grid> */}
         </div>
       </div>
     </React.Fragment>

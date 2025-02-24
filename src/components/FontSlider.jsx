@@ -32,7 +32,7 @@ const FontSlider = () => {
       src={images[index]}
       alt=""
       style={{
-        maxHeight: 200,
+        maxHeight: 300,
         maxWidth: "auto",
         marginBottom: 40,
       }}

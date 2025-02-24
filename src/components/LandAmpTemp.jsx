@@ -23,12 +23,14 @@ const LandAmpTemp = (props) => {
               className="image roundCorners2 shadow"
               alt="Hazards and Hijinks"
             ></img>
-            <h3
-              style={{ fontFamily: "Brush Script MT" }}
-              className="text-black"
-            ></h3>
+
             <div className="middle hoverHand">
-              <div className="text">Check Out More!</div>
+              <h3
+                style={{ fontFamily: "Brush Script MT" }}
+                className="text-black"
+              >
+                Check Out More!
+              </h3>
             </div>
           </div>
         </div>

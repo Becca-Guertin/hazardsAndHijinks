@@ -50,7 +50,7 @@ const Banners = () => {
                 <i className="bg-white">
                   <img
                    className="logo2"
-                    alt="SunPopShop"
+                    alt=""
                     src={images.logo2}
                     style={{
                       height: 150,
